@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-#include "lab8part2lib.h"
 #include "project_reversi_skeleton.h" // DO NOT modify this line
 
 // Note: You may want to add more function declarations here
@@ -350,8 +349,6 @@ int main(void) {
 			//player's move
 			printf("Enter move for colour %c (RowCol): ", player);
 			scanf(" %c%c", &rowM, &colM);
-			//findSmarterMove(board, n, player, &rowM, &colM);
-			//printf("Testing AI move (row, col): %c%c\n", rowM + 'a', colM +'a');
 		
 			if (checkLegal(board, n, rowM - 'a', colM - 'a', player) == true)
 				move(board, n, rowM - 'a', colM - 'a', player);
